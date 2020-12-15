@@ -26,13 +26,10 @@ To enable client-side OCR (which will execute in the users's browser) is much sl
 
 ## screenshots demo 1
 
-![demo ocr 1](git_assets/demo_b1.jpg) 
-![demo ocr 1](git_assets/demo_b2.jpg) 
 ![demo ocr 1](git_assets/demo_b3.jpg) 
 
 ## screenshots demo 2
 
-![demo ocr 2](git_assets/demo_a1.jpg) 
 ![demo ocr 2](git_assets/demo_a2.jpg) 
 
 ## support
