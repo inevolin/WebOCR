@@ -61,6 +61,8 @@ function serverProcessImg(data) {
     results.innerHTML += data + '<br>';
     results.innerHTML += '----------------<br>';
     window.scrollTo(0,document.body.scrollHeight);
+  }).fail(function(err) {
+    console.log(err)
   });
 }
 

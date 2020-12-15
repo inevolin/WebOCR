@@ -10,15 +10,27 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true, limit: '5mb'}))
 
 app.post('/ocr', (req, res) => {
-  var base = req.body.data;
-  Tesseract.recognize(
-    base, 'eng', { logger: m => console.log(m) }
-  )
-  .then(({ data: { text } }) => {
-    res.send(text);
-    console.log(text);
-  });
+  try {
+    var base = req.body.data;
+    Tesseract.recognize(
+      base, 'eng', // { logger: m => console.log(m) }
+    ).catch((err) => {
+      console.error(err)
+      res.send('## error 20')
+    }).then( data => {
+      res.send(data.data.text);
+      console.log(data.data.text);
+    });
+  }
+  catch (err) {
+    console.log(err)
+    res.send('## error 29')
+  }
 });
+
+app.get('/ocr', (req, res) => {
+  res.send('nothing here')
+})
 
 app.use(function(req, res) {
   console.error(404, req.url)
