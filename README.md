@@ -9,6 +9,10 @@ Minimalistic OCR from camera devices. Recognize and copy text from photos made o
 4. wait a few seconds for the image to be processed
 5. the detected text will be shown below
 
+## notes
+
+The OCR system does a pretty good job, especially with numbers and special characters. However it's definitely not perfect and can produce inaccuracies.
+
 ## installation
 
 You need NodeJS v12+.
@@ -24,11 +28,9 @@ To keep it running 24/7 use a library like PM2 and execute: `pm2 start ecosystem
 There are two ways to carry out OCR: client-side and server-side (default).
 To enable client-side OCR (which will execute in the users's browser) is much slower but could be tweaked using more workers. For these configurations you should consult TesseractJS's API docs. To enable client-side OCR use the function `localProcessImg()` instead of `serverProcessImg()` inside `/public/main.js`.
 
-## screenshots demo 1
+## screenshots
 
 ![demo ocr 1](git_assets/demo_b3.jpg) 
-
-## screenshots demo 2
 
 ![demo ocr 2](git_assets/demo_a2.jpg) 
 
