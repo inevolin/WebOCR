@@ -44,7 +44,7 @@ app.use(function(err, req, res, next) {
   res.send('500 something went wrong')
 })
 
-const port = 1523;
+const port = process.env.PORT || 1523;
 const host = '0.0.0.0'; // or localhost
 http.listen(port, host, () => {
   console.log(`listening on ${host}:${port}`);
