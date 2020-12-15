@@ -26,7 +26,7 @@ To keep it running 24/7 use a library like PM2 and execute: `pm2 start ecosystem
 ## devs
 
 There are two ways to carry out OCR: client-side and server-side (default).
-To enable client-side OCR (which will execute in the users's browser) is much slower but could be tweaked using more workers. For these configurations you should consult TesseractJS's API docs. To enable client-side OCR use the function `localProcessImg()` instead of `serverProcessImg()` inside `/public/main.js`.
+Client-side OCR runs in the browser, it is much slower but could be tweaked using more workers. For these configurations you should consult TesseractJS's API docs. To enable client-side OCR use the function `localProcessImg()` instead of `serverProcessImg()` inside `/public/main.js`.
 
 ## screenshots
 
