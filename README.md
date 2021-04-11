@@ -34,9 +34,10 @@ Client-side OCR runs in the browser, it is much slower but could be tweaked usin
 
 ![demo ocr 2](git_assets/demo_a2.jpg) 
 
-## support
+## Contact
+
 For enquiries or issues get in touch with me:
 
-Name: Ilya Nevolin
+Name: [Ilya Nevolin](https://www.linkedin.com/in/iljanevolin/)
 
 Email: ilja.nevolin@gmail.com
